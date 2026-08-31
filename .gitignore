@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+
+auryvex
+*.log
+
+node_modules/
+dist/
+build/
+
+__pycache__/
+*.pyc
+
+.idea/
+.vscode/
+.DS_Store
