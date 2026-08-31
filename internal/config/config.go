@@ -36,6 +36,8 @@ func Load() *Config {
 		DatabaseURL: os.Getenv("DATABASE_URL"),
 		RedisURL:    os.Getenv("REDIS_URL"),
 		WebAppURL:   os.Getenv("WEBAPP_URL"),
+		ArcAPIURL:   os.Getenv("ARC_API_URL"),
+		ArcAPIKey:   os.Getenv("ARC_API_KEY"),
 	}
 
 	if cfg.BotToken == "" {
