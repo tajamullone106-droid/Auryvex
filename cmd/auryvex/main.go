@@ -10,6 +10,7 @@ import (
 	"github.com/tajamullone106-droid/Auryvex/internal/config"
 	"github.com/tajamullone106-droid/Auryvex/internal/db"
 	"github.com/tajamullone106-droid/Auryvex/internal/room"
+	"github.com/tajamullone106-droid/Auryvex/internal/ws"
 )
 
 func main() {
@@ -39,6 +40,9 @@ func main() {
 	}
 
 	roomManager := room.NewManager(pool, redisClient)
+	hub := ws.NewHub(roomManager)
+
+	go startServer(hub)
 
 	log.Println("Database connected")
 	log.Println("Redis connected")
