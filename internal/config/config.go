@@ -15,6 +15,8 @@ type Config struct {
 	DatabaseURL string
 	RedisURL    string
 	WebAppURL   string
+	ArcAPIURL   string
+	ArcAPIKey   string
 }
 
 func Load() *Config {
