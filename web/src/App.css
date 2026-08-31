@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family:
+    Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #08090d;
+  color: #fff;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 50% 0%, #202337 0, #0d0e14 35%, #08090d 70%);
+}
+
+.topbar {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo,
+.cover-letter,
+.queue-cover {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #7c5cff, #b66cff);
+  color: white;
+  font-weight: 800;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  font-size: 20px;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.brand span {
+  color: #858797;
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 7px;
+}
+
+.actions button,
+.controls button {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background: #171821;
+  border: 1px solid #252633;
+  border-radius: 13px;
+}
+
+.room {
+  max-width: 760px;
+  margin: 70px auto 0;
+  text-align: center;
+}
+
+.cover {
+  width: min(72vw, 300px);
+  aspect-ratio: 1;
+  margin: auto;
+  border-radius: 28px;
+  padding: 1px;
+  background: linear-gradient(135deg, #8066ff, #342a62);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, .45);
+}
+
+.cover-letter {
+  width: 100%;
+  height: 100%;
+  border-radius: 27px;
+  font-size: 100px;
+}
+
+.track-info {
+  margin-top: 28px;
+}
+
+.label {
+  color: #858797;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.track-info h2 {
+  margin: 8px 0 3px;
+  font-size: 25px;
+}
+
+.track-info p {
+  margin: 0;
+  color: #8f91a0;
+}
+
+.progress-area {
+  margin-top: 30px;
+}
+
+.progress-area input,
+.volume input {
+  width: 100%;
+  accent-color: #8b70ff;
+}
+
+.times {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+  color: #737582;
+  font-size: 11px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.controls .play {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #fff;
+  color: #090a0f;
+}
+
+.volume {
+  width: 220px;
+  margin: 25px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.volume input {
+  width: 100%;
+}
+
+.search {
+  max-width: 760px;
+  margin: 45px auto 0;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #12131a;
+  border: 1px solid #242530;
+  border-radius: 15px;
+}
+
+.search svg {
+  color: #7e8090;
+}
+
+.search input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: white;
+}
+
+.search input::placeholder {
+  color: #666875;
+}
+
+.queue {
+  max-width: 760px;
+  margin: 18px auto;
+  padding: 18px;
+  background: #12131a;
+  border: 1px solid #242530;
+  border-radius: 18px;
+}
+
+.queue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.queue-header h3 {
+  margin: 0;
+}
+
+.queue-header span {
+  color: #777987;
+  font-size: 12px;
+}
+
+.queue-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.queue-cover {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+}
+
+.queue-item div:nth-child(2) {
+  flex: 1;
+  text-align: left;
+}
+
+.queue-item strong,
+.queue-item span {
+  display: block;
+}
+
+.queue-item span,
+.queue-item time {
+  color: #777987;
+  font-size: 12px;
+}
+
+@media (max-width: 520px) {
+  .room {
+    margin-top: 45px;
+  }
+
+  .cover {
+    width: min(68vw, 260px);
+  }
+}
