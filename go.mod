@@ -1,4 +1,4 @@
-module github.com/tajamullone106-driod/Auryvex
+module github.com/tajamullone106-droid/Auryvex
 
 go 1.25.0
 

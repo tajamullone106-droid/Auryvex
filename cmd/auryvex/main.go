@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/tajamullone106-driod/Auryvex/internal/bot"
-	"github.com/tajamullone106-driod/Auryvex/internal/config"
+	"github.com/tajamullone106-droid/Auryvex/internal/bot"
+	"github.com/tajamullone106-droid/Auryvex/internal/config"
 )
 
 func main() {

@@ -5,7 +5,7 @@ import (
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 
-	"github.com/tajamullone106-driod/Auryvex/internal/config"
+	"github.com/tajamullone106-droid/Auryvex/internal/config"
 )
 
 func Start(cfg *config.Config) {
